@@ -1,5 +1,7 @@
 # TypeScript Simplified
 
+* <https://courses.webdevsimplified.com/view/courses/typescript-simplified>
+
 ```bash
 npm i --save-dev typescript
 ```
