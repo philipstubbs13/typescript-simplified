@@ -37,3 +37,20 @@ SKILL_LEVELS.forEach(skillLevel => {
     console.log(skillLevel)
 })
 ```
+
+```bash
+type APIResponse<TData = { status: number }> = {
+    data: TData
+    isError: boolean
+}
+
+type UserResponse = APIResponse<{ name: string, age: number}>
+
+const a: UserResponse = {
+    data: {
+        name: "sdf",
+        age: 324
+    },
+    isError: false
+}
+```
