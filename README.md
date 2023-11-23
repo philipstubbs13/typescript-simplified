@@ -25,3 +25,15 @@ npm create vite@latest .
 * understanding the tsconfig
     * <https://github.com/tsconfig/bases>
     * <https://www.typescriptlang.org/tsconfig>
+
+```bash
+const SKILL_LEVELS = ["Beginner", "Intermediate", "Expert"] as const
+
+type Person = {
+    skillLevel: (typeof SKILL_LEVELS)[number]
+}
+
+SKILL_LEVELS.forEach(skillLevel => {
+    console.log(skillLevel)
+})
+```
