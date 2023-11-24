@@ -165,3 +165,25 @@ function isPriority(description: string): description is Priority {
     return PRIORITIES.includes(description as Priority)
 }
 ```
+
+Declaration Files
+```bash
+// lodash.d.ts
+
+declare module "lodash" {
+    function times(num: number): number[]
+}
+
+// globals.d.ts
+declare global {
+    interface Console {
+        superLog: () => void
+    }
+}
+
+export {}
+
+declare global {
+    declare var test: number
+}
+```
